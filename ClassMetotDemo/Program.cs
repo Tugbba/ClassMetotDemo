@@ -10,7 +10,7 @@ namespace ClassMetotDemo
 
         static void Main(string[] args)
         {
-            Costumer costumer1 = new Costumer
+            Customer customer1 = new Customer
             {
                 Id = 1,
                 IdentificationNumber = 1111111111,
@@ -20,7 +20,7 @@ namespace ClassMetotDemo
                 PhoneNumber = "553-067-7078",
             };
 
-            Costumer costumer2 = new Costumer 
+            Customer customer2 = new Customer 
             {
                 Id = 2,
                 IdentificationNumber = 222222222,
@@ -31,27 +31,27 @@ namespace ClassMetotDemo
             };
            
 
-            CostumerManager costumerManager = new CostumerManager();
+            CustomerManager customerManager = new CustomerManager();
 
-            costumerManager.Add(costumer1 );
-            Console.WriteLine(costumer1.Id+costumer1.Name+ " "+ costumer1.Surname);
+            customerManager.Add(customer1 );
+            Console.WriteLine(customer1.Id+customer1.Name+ " "+ customer1.Surname);
 
-            costumerManager.List(costumer1);
-            Console.WriteLine(costumer1.Id + costumer1.Name + " " + costumer1.Surname);
+            customerManager.List(customer1);
+            Console.WriteLine(customer1.Id + customer1.Name + " " + customer1.Surname);
 
-            costumerManager.Delete(costumer1);
-            Console.WriteLine(costumer1.Id + costumer1.Name + " "+ costumer1.Surname);
+            customerManager.Delete(customer1);
+            Console.WriteLine(customer1.Id + customer1.Name + " "+ customer1.Surname);
 
 
-            Costumer[] costumers = new Costumer[] { costumer1, costumer2 };
-            foreach (Costumer costumer in costumers)
+            Customer[] customers = new Customer[] { customer1, customer2 };
+            foreach (Customer customer in customers)
             {
-                Console.WriteLine(costumer.Id);
-                Console.WriteLine(costumer.IdentificationNumber);
-                Console.WriteLine(costumer.Name);
-                Console.WriteLine(costumer.Surname);
-                Console.WriteLine(costumer.Email);
-                Console.WriteLine(costumer.PhoneNumber);
+                Console.WriteLine(customer.Id);
+                Console.WriteLine(customer.IdentificationNumber);
+                Console.WriteLine(customer.Name);
+                Console.WriteLine(customer.Surname);
+                Console.WriteLine(customer.Email);
+                Console.WriteLine(customer.PhoneNumber);
             }
         }
     }
