@@ -5,19 +5,19 @@ using System.Text;
 
 namespace ClassMetotDemo
 {
-    class CostumerManager
+    class CustomerManager
     {
-        public void Add(Costumer costumer)
+        public void Add(Customer customer)
         {
-            Console.WriteLine(costumer.Id + costumer.Name + " Eklendi.");
+            Console.WriteLine(customer.Id + customer.Name + " Eklendi.");
         }
-        public void List(Costumer costumer)
+        public void List(Customer customer)
         {
-            Console.WriteLine(costumer.Id + costumer.Name + " Listelendi." );
+            Console.WriteLine(customer.Id + customer.Name + " Listelendi." );
         }
-        public void Delete(Costumer costumer)
+        public void Delete(Customer customer)
         {
-            Console.WriteLine(costumer.Id + " Kayıt silindi");
+            Console.WriteLine(customer.Id + " Kayıt silindi");
         }
 
     }
