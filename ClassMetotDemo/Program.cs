@@ -14,8 +14,8 @@ namespace ClassMetotDemo
             {
                 Id = 1,
                 TcNo= 1111111111,
-                Name = "Tuba",
-                Surname = "Cinbek",
+                FirstName = "Tuba",
+                Lastname = "Cinbek",
                 Email = "tugbacinbek@gmail.com",
                 PhoneNumber = "553-067-7078",
             };
@@ -24,8 +24,8 @@ namespace ClassMetotDemo
             {
                 Id = 2,
                 TcNo = 222222222,
-                Name = "Sude",
-                Surname = "Kar",
+                FirstName = "Sude",
+                Lastname = "Kar",
                 Email = "sudekarl47@gmail.com",
                 PhoneNumber = "537-066-5418",
             };
@@ -34,13 +34,13 @@ namespace ClassMetotDemo
             CustomerManager customerManager = new CustomerManager();
 
             customerManager.Add(customer1 );
-            Console.WriteLine(customer1.Id+customer1.Name+ " "+ customer1.Surname);
+            Console.WriteLine(customer1.Id+customer1.FirstName+ " "+ customer1.Lastname);
 
             customerManager.List(customer1);
-            Console.WriteLine(customer1.Id + customer1.Name + " " + customer1.Surname);
+            Console.WriteLine(customer1.Id + customer1.FirstName + " " + customer1.Lastname);
 
             customerManager.Delete(customer1);
-            Console.WriteLine(customer1.Id + customer1.Name + " "+ customer1.Surname);
+            Console.WriteLine(customer1.Id + customer1.FirstName + " "+ customer1.Lastname);
 
 
             Customer[] customers = new Customer[] { customer1, customer2 };
@@ -48,8 +48,8 @@ namespace ClassMetotDemo
             {
                 Console.WriteLine(customer.Id);
                 Console.WriteLine(customer.TcNo);
-                Console.WriteLine(customer.Name);
-                Console.WriteLine(customer.Surname);
+                Console.WriteLine(customer.FirstName);
+                Console.WriteLine(customer.Lastname);
                 Console.WriteLine(customer.Email);
                 Console.WriteLine(customer.PhoneNumber);
             }
