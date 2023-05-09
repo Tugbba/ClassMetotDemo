@@ -9,11 +9,11 @@ namespace ClassMetotDemo
     {
         public void Add(Customer customer)
         {
-            Console.WriteLine(customer.Id + customer.Name + " Eklendi.");
+            Console.WriteLine(customer.Id + customer.FirstName + " Eklendi.");
         }
         public void List(Customer customer)
         {
-            Console.WriteLine(customer.Id + customer.Name + " Listelendi." );
+            Console.WriteLine(customer.Id + customer.FirstName + " Listelendi." );
         }
         public void Delete(Customer customer)
         {
