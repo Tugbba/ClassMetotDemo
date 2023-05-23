@@ -34,13 +34,13 @@ namespace ClassMetotDemo
             CustomerManager customerManager = new CustomerManager();
 
             customerManager.Add(customer1 );
-            Console.WriteLine(customer1.Id+customer1.FirstName+ " "+ customer1.Lastname);
+            Console.WriteLine(customer1.Id+customer1.FirstName + " " + customer1.Lastname);
 
             customerManager.List(customer1);
             Console.WriteLine(customer1.Id + customer1.FirstName + " " + customer1.Lastname);
 
             customerManager.Delete(customer1);
-            Console.WriteLine(customer1.Id + customer1.FirstName + " "+ customer1.Lastname);
+            Console.WriteLine(customer1.Id + customer1.FirstName + " " + customer1.Lastname);
 
 
             Customer[] customers = new Customer[] { customer1, customer2 };
