@@ -13,7 +13,7 @@ namespace ClassMetotDemo
             Customer customer1 = new Customer
             {
                 Id = 1,
-                TcNo= 1111111111,
+                NationalityId = 1111111111,
                 FirstName = "Tuba",
                 Lastname = "Cinbek",
                 Email = "tugbacinbek@gmail.com",
@@ -23,7 +23,7 @@ namespace ClassMetotDemo
             Customer customer2 = new Customer 
             {
                 Id = 2,
-                TcNo = 222222222,
+                NationalityId = 222222222,
                 FirstName = "Sude",
                 Lastname = "Kar",
                 Email = "sudekarl47@gmail.com",
@@ -47,7 +47,7 @@ namespace ClassMetotDemo
             foreach (Customer customer in customers)
             {
                 Console.WriteLine(customer.Id);
-                Console.WriteLine(customer.TcNo);
+                Console.WriteLine(customer.NationalityId);
                 Console.WriteLine(customer.FirstName);
                 Console.WriteLine(customer.Lastname);
                 Console.WriteLine(customer.Email);
